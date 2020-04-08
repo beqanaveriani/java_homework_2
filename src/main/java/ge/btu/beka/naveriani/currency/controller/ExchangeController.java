@@ -7,6 +7,7 @@ import ge.btu.beka.naveriani.currency.service.ExchangeService;
 import ge.btu.beka.naveriani.currency.service.impl.ExchangeServiceImpl;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -25,13 +26,13 @@ public class ExchangeController {
         return exchangeService.getRates();
     }
 
-    @GET
+    @POST
     @Path("/sell/gel")
     public BigDecimal sellGel(ExchangeConvertRequest request){
         return exchangeService.sellGel(request);
     }
 
-    @GET
+    @POST
     @Path("/buy/gel")
     public BigDecimal buyGel(ExchangeConvertRequest request){
         return exchangeService.buyGel(request);

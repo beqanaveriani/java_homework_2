@@ -32,7 +32,7 @@
     </dependencies>
 
     <build>
-        <finalName>exhchangeApi</finalName>
+        <finalName>exchangeApi</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
